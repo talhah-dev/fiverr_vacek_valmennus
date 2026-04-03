@@ -1,0 +1,40 @@
+RewriteEngine On
+
+# Canonicalize service URLs without trailing slashes.
+RewriteRule ^palvelut/$ /palvelut [R=301,L,NC]
+RewriteRule ^en/services/$ /en/services [R=301,L,NC]
+RewriteRule ^palvelut\.html$ /palvelut [R=301,L,NC]
+
+# Permanently redirect renamed Finnish source files to their localized filenames.
+RewriteCond %{THE_REQUEST} \s/+AboutUs\.html(?:[?\s]|/)
+RewriteRule ^AboutUs\.html/?$ /tietoa-minusta.html [R=301,L,NC]
+RewriteCond %{THE_REQUEST} \s/+Contact\.html(?:[?\s]|/)
+RewriteRule ^Contact\.html/?$ /ota-yhteytta.html [R=301,L,NC]
+RewriteCond %{THE_REQUEST} \s/+Gallery\.html(?:[?\s]|/)
+RewriteRule ^Gallery\.html/?$ /galleria.html [R=301,L,NC]
+RewriteCond %{THE_REQUEST} \s/+gallery\.html(?:[?\s]|/)
+RewriteRule ^gallery\.html/?$ /galleria.html [R=301,L,NC]
+
+# Permanently redirect the old Finnish services URL to the localized slug.
+RewriteCond %{THE_REQUEST} \s/+services(?:\.html)?(?:[?\s]|/)
+RewriteRule ^services(?:\.html)?/?$ /palvelut [R=301,L,NC]
+
+# Permanently redirect old English service URLs to the new canonical route.
+RewriteCond %{THE_REQUEST} \s/+En/services(?:\.html)?(?:[?\s]|/)
+RewriteRule ^En/services(?:\.html)?/?$ /en/services [R=301,L,NC]
+RewriteCond %{THE_REQUEST} \s/+en/services\.html(?:[?\s]|/)
+RewriteRule ^en/services\.html/?$ /en/services [R=301,L,NC]
+
+# Normalize the English language prefix to lowercase when it is requested directly.
+RewriteCond %{THE_REQUEST} \s/+En/([^\s?]+)
+RewriteRule ^En/(.+)$ /en/$1 [R=301,L,NC]
+
+# Serve the localized Finnish services page from the existing source file.
+RewriteRule ^palvelut$ /palvelut.html [L,NC]
+
+# Serve lowercase /en/... URLs from the tracked En/ directory.
+RewriteRule ^en/services$ /En/services.html [L,NC]
+RewriteRule ^en/?$ /En/index.html [L,NC]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^en/(.+)$ /En/$1 [L,NC]
