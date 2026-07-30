@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physiotherapy | Vacek Valmennus Helsinki</title>
+    <meta name="description"
+        content="Private physiotherapy in Helsinki combining assessment, pain management, rehabilitation and sports injury support.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://vacek-valmennus.com/en/physiotherapy">
+    <link rel="alternate" hreflang="fi" href="https://vacek-valmennus.com/fysioterapia">
+    <link rel="alternate" hreflang="en" href="https://vacek-valmennus.com/en/physiotherapy">
+    <link rel="alternate" hreflang="x-default" href="https://vacek-valmennus.com/fysioterapia">
+    <meta property="og:site_name" content="Vacek Valmennus">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Physiotherapy | Vacek Valmennus Helsinki">
+    <meta property="og:description"
+        content="Private physiotherapy in Helsinki combining assessment, pain management, rehabilitation and sports injury support.">
+    <meta property="og:url" content="https://vacek-valmennus.com/en/physiotherapy">
+    <meta property="og:image" content="https://vacek-valmennus.com/Docs/Assets/logo.png">
+    <meta property="og:image:alt" content="Vacek Valmennus logo">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Physiotherapy | Vacek Valmennus Helsinki">
+    <meta name="twitter:description"
+        content="Private physiotherapy in Helsinki combining assessment, pain management, rehabilitation and sports injury support.">
+    <meta name="twitter:image" content="https://vacek-valmennus.com/Docs/Assets/logo.png">
+    <link rel="icon" href="../Docs/Assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../Docs/Styles/global.css">
+    <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- new fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-white">
+    <div style="width: 0;" id="resNav"
+        class="fixed transition-all duration-500 overflow-hidden h-screen top-0 left-0 bg-white z-50">
+        <div class="flex p-5 items-center justify-between">
+            <a href="./index.html"><img src="../Docs/Assets/logo.png" class="h-9" alt=""></a>
+            <i id="closeNav" class="fa-solid fa-x text-xl"></i>
+        </div>
+        <div class="mt-8 text-nowrap px-5 w-full flex flex-col gap-10 justify-between h-[80vh] overflow-auto">
+            <ul class="flex-col gap-8 flex">
+                <li><a href="./index.html" class="hover:text-[#0a3a22] transition-all duration-500">Home</a></li>
+                <li><a href="./AboutUs.html" class="hover:text-[#0a3a22] transition-all duration-500">About Us</a></li>
+                <li><a href="./services.html" class="hover:text-[#0a3a22] transition-all duration-500">Services</a></li>
+                <li><a href="./physiotherapy.html"
+                        class="hover:text-[#0a3a22] transition-all duration-500">Physiotherapy</a></li>
+                <li><a href="./contactUs.html" class="hover:text-[#0a3a22] transition-all duration-500">Contact Us</a>
+                </li>
+                <li><a href="./gallery.html" class="hover:text-[#0a3a22] transition-all duration-500">Gallery</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <header class="w-full"
+        style="background: linear-gradient(rgba(12, 21, 11, 0.88),rgba(0, 0, 0, 0.72)),url(../Docs/Assets/about-bg.webp) center/cover no-repeat;">
+        <div class="flex items-center justify-between max-w-7xl w-full mx-auto p-5">
+            <a href="./index.html"><img src="../Docs/Assets/logo.png" class="md:h-16 h-12" alt=""></a>
+            <div class="flex items-center gap-3">
+                <ul class="hidden items-center justify-center gap-8 lg:flex">
+                    <li><a href="./index.html"
+                            class="hover:text-[#c0ffdd] text-white transition-all duration-500">Home</a></li>
+                    <li><a href="./AboutUs.html"
+                            class="hover:text-[#c0ffdd] text-white transition-all duration-500">About Us</a></li>
+                    <li><a href="./services.html"
+                            class="hover:text-[#c0ffdd] text-white transition-all duration-500">Services</a></li>
+                    <li><a href="./physiotherapy.html"
+                            class="hover:text-[#c0ffdd] text-white transition-all duration-500">Physiotherapy</a></li>
+                    <li><a href="./gallery.html"
+                            class="hover:text-[#c0ffdd] text-white transition-all duration-500">Gallery</a></li>
+                    <a href="./contactUs.html"><button
+                            class="bg-transparent border border-2 border-white rounded-lg px-6 py-2.5 text-white font-medium hover:bg-white hover:text-black transition-all duration-500">Book
+                            now</button></a>
+                </ul>
+                <div class="group cursor-pointer">
+                    <div class="py-1">
+                        <div class="flex rounded-lg p-3 items-center gap-2 border-2 border-gray-200">
+                            <img src="https://flagcdn.com/w40/us.png" alt="us Flag" class="w-6 h-4">
+                            <i
+                                class="fa-solid group-hover:rotate-180 transition-all duration-500 fa-angle-down text-white"></i>
+                        </div>
+                    </div>
+                    <div
+                        class="border-2 rounded-lg overflow-hidden fadeIn group-hover:block hidden absolute border-white">
+                        <a href="../fysioterapia.html"
+                            class="flex p-[7px] items-center gap-2 transition-all duration-500 hover:bg-[#ffffff27]">
+                            <img src="https://flagcdn.com/w40/fi.png" alt="fi Flag" class="w-6 h-4">
+                            <p class="text-white">Fi...</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <i class="fa-solid fa-bars text-2xl text-[#fff] cursor-pointer lg:hidden" id="openNav"></i>
+        </div>
+
+        <section class="py-14 lg:py-24 relative">
+            <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 relative text-center text-white">
+                <p class="flex items-center justify-center text-[#c0ffdd] gap-2 font-medium"><i
+                        class="fa-solid fa-hand-holding-medical"></i>Vacek Physiotherapy</p>
+                <h1
+                    class="max-w-3xl mx-auto text-center font-bold text-4xl text-white mb-5 md:text-5xl md:leading-normal">
+                    Physiotherapy that gets you moving again</h1>
+                <p class="max-w-3xl mx-auto text-center text-base font-normal leading-7 text-gray-300 mb-9">I combine
+                    physiotherapy expertise with years of personal training experience to help you reduce pain and
+                    return to movement - sustainably.</p>
+                <a href="./contactUs.html" class="inline-flex">
+                    <button
+                        class="bg-white text-black border border-white rounded-lg px-7 py-3.5 font-medium hover:bg-transparent hover:text-white transition-all duration-500">Book
+                        an appointment</button>
+                </a>
+            </div>
+        </section>
+    </header>
+
+
+
+    <main class="py-24 bg-[#FAF8F4]" style="font-family: 'Inter', sans-serif;">
+        <section class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+
+            <div class="mb-14 max-w-2xl">
+                <span
+                    class="inline-flex items-center gap-2 text-xs font-medium tracking-[0.18em] uppercase text-[#C4674A]">
+                    Services
+                </span>
+                <h2 class="mt-4 text-4xl sm:text-5xl leading-[1.1] text-[#14251c]"
+                    style="font-family: 'Fraunces', serif; font-weight: 500;">
+                    From pain back to movement
+                </h2>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-6 items-stretch relative">
+
+                <div
+                    class="hidden lg:block absolute left-1/2 top-16 bottom-16 w-px -translate-x-1/2 pointer-events-none">
+                    <svg width="2" height="100%" class="h-full w-full" preserveAspectRatio="none">
+                        <line x1="1" y1="0" x2="1" y2="100%" stroke="#0a3a22" stroke-opacity="0.15" stroke-width="1"
+                            stroke-dasharray="1 7" stroke-linecap="round" />
+                    </svg>
+                </div>
+
+                <div
+                    class="rounded-[28px] bg-white border border-[#e7e2d8] p-9 sm:p-10 shadow-[0_1px_2px_rgba(20,37,28,0.04)]">
+                    <h3 class="text-2xl text-[#14251c] mb-7" style="font-family: 'Fraunces', serif; font-weight: 500;">
+                        What I do
+                    </h3>
+                    <ul class="space-y-6">
+                        <li class="pl-6 border-l-2 border-[#e7e2d8]">
+                            <p class="font-semibold text-[#14251c]">Initial assessment and evaluation</p>
+                            <p class="mt-1.5 text-[15px] leading-relaxed text-[#5b6660]">A full review of mobility, pain
+                                drivers and functional capacity.</p>
+                        </li>
+                        <li class="pl-6 border-l-2 border-[#e7e2d8]">
+                            <p class="font-semibold text-[#14251c]">Pain management</p>
+                            <p class="mt-1.5 text-[15px] leading-relaxed text-[#5b6660]">A focused, holistic approach to
+                                acute and persistent pain.</p>
+                        </li>
+                        <li class="pl-6 border-l-2 border-[#e7e2d8]">
+                            <p class="font-semibold text-[#14251c]">Post-surgery rehabilitation</p>
+                            <p class="mt-1.5 text-[15px] leading-relaxed text-[#5b6660]">A safe and progressive return
+                                to daily life and exercise.</p>
+                        </li>
+                        <li class="pl-6 border-l-2 border-[#C4674A]">
+                            <p class="font-semibold text-[#14251c]">Sports injuries, especially for runners</p>
+                            <p class="mt-1.5 text-[15px] leading-relaxed text-[#5b6660]">Treatment and prevention,
+                                technique analysis and return-to-sport planning.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="rounded-[28px] bg-[#14251c] p-9 sm:p-10 flex flex-col relative overflow-hidden">
+                    <svg class="absolute -right-10 -bottom-10 opacity-[0.07]" width="220" height="220"
+                        viewBox="0 0 220 220" fill="none">
+                        <circle cx="110" cy="110" r="109" stroke="white" stroke-width="1" />
+                        <circle cx="110" cy="110" r="80" stroke="white" stroke-width="1" />
+                        <circle cx="110" cy="110" r="50" stroke="white" stroke-width="1" />
+                    </svg>
+
+                    <h3 class="text-2xl text-white mb-4 relative"
+                        style="font-family: 'Fraunces', serif; font-weight: 500;">
+                        Why this matters
+                    </h3>
+                    <p class="text-[#c9d2cb] leading-relaxed relative">
+                        Because I also come from a personal training background, rehabilitation does not stop when the
+                        pain eases. We build strength and movement control together to help prevent the problem from
+                        coming back.
+                    </p>
+
+                    <div class="mt-8 rounded-2xl bg-white/[0.06] border border-white/10 p-5 relative">
+                        <p class="text-xs font-medium tracking-[0.14em] uppercase text-[#C4674A]">Private only</p>
+                        <p class="mt-2 text-sm leading-relaxed text-[#c9d2cb]">
+                            This service is self-pay only. No insurance or reimbursement information is needed here.
+                        </p>
+                    </div>
+
+                    <a href="./contactUs.html" class="mt-8 relative group inline-flex w-fit">
+                        <button
+                            class="bg-[#C4674A] text-white rounded-full pl-7 pr-6 py-3.5 font-medium text-sm inline-flex items-center gap-2 transition-colors duration-300 group-hover:bg-[#d97757]">
+                            Book an appointment
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                class="transition-transform duration-300 group-hover:translate-x-0.5">
+                                <path d="M3 8h10M9 4l4 4-4 4" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-8">
+            <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+                <div class="rounded-[28px] border border-[#e7e2d8] bg-white/60 p-10 md:p-14 text-center">
+                    <div
+                        class="mx-auto mb-5 h-10 w-10 rounded-full border border-[#e7e2d8] flex items-center justify-center">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M8 2v12M2 8h12" stroke="#C4674A" stroke-width="1.5" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl text-[#14251c] mb-3" style="font-family: 'Fraunces', serif; font-weight: 500;">
+                        Physiotherapy testimonials coming soon
+                    </h3>
+                    <p class="text-[#5b6660] max-w-md mx-auto leading-relaxed">
+                        PT testimonials stay as they are for now, and physiotherapy-specific feedback will be added
+                        later.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="w-full border-t border-gray-200">
+        <div
+            class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 flex items-center justify-between flex-col md:flex-row gap-4">
+            <span class="text-sm text-gray-500">Copyright © Vacek Valmennus 2026, All rights reserved.</span>
+            <a href="./contactUs.html" class="text-sm font-medium text-[#0a3a22] hover:underline">Book now</a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="../Docs/Javascripts/global.js"></script>
+</body>
+
+</html>
