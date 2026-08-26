@@ -33,3 +33,10 @@
     --tw-text-opacity: 1;
     color: rgb(10 58 34 / var(--tw-text-opacity));
 }
+
+.line-clamp-4 {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
